@@ -1,0 +1,17 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Advance css project",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Byron",
+  "license": "ISC",
+  "dependencies": {
+    "npm": "^6.3.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.3"
+  }
+}
