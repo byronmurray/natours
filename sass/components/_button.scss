@@ -14,7 +14,7 @@
 
   &:hover {
     transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba(0,0,0, .2);
+    box-shadow: 0 1rem 2rem $rgba-black-med;
 
     &::after {
       transform: scale(1.4, 1.6);
@@ -25,7 +25,7 @@
 
   &:active {
     transform: translateY(-1px);
-    box-shadow: 0 .5rem 1rem rgba(0,0,0, .2);
+    box-shadow: 0 .5rem 1rem $rgba-black-light;
   }
 
   &--white {
@@ -34,6 +34,16 @@
 
     &::after {
       background-color: $color-white;
+    }
+
+  }
+
+  &--green {
+    background-color: $color-primary;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-primary;
     }
 
   }
@@ -52,7 +62,7 @@
   }
 
   &--animated {
-    animation: moveInBottom .4s ease-out .75s;
+    animation: moveInBottom .4s ease-out .75s; // WICKED !!
     animation-fill-mode: backwards;
   }
 
@@ -74,12 +84,12 @@
   &:hover {
     background-color: $color-primary;
     color: $color-white;
-    box-shadow: 0 1rem 2rem rgba($color-black, .15);
+    box-shadow: 0 1rem 2rem $rgba-black-med;
     transform: translateX(-2px);
   }
 
   &:active {
-    box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+    box-shadow: 0 .5rem 1rem $rgba-black-light;
     transform: translateX(0);
   }
 }
